@@ -1,0 +1,91 @@
+
+
+					case 0x00646878: // eax -- R_DrawXModelSkinnedCached
+						//pExceptionInfo->ContextRecord->Eip = (DWORD)h_R_DrawXModelSkinnedCached;
+						pExceptionInfo->ContextRecord->Eax = or_logfile;
+						return EXCEPTION_CONTINUE_EXECUTION;
+
+					case 0x00646982: // eax -- R_DrawXModelSkinnedUncached
+						//pExceptionInfo->ContextRecord->Eip = (DWORD)h_R_DrawXModelSkinnedUncached;
+						pExceptionInfo->ContextRecord->Eax = or_logfile;
+						return EXCEPTION_CONTINUE_EXECUTION;
+
+					// stuff past here is just cleanup junk so the nulled r_logfile doesn't cause a crash.
+
+					case 0x005FAF32: // ecx
+					case 0x006100C9: // ecx
+					case 0x006100E8: // ecx
+					case 0x0063212D: // ecx
+					case 0x006322DE: // ecx
+					case 0x006324BE: // ecx
+					case 0x00632C8B: // ecx
+					case 0x00632CE6: // ecx
+					case 0x0063D135: // ecx
+					case 0x0063D2AC: // ecx
+					case 0x0063D624: // ecx
+					case 0x0063D6EB: // ecx
+					case 0x0063D7D2: // ecx
+					case 0x0063D82A: // ecx
+					case 0x0063D87C: // ecx
+					case 0x0063D8CE: // ecx
+					case 0x0063D924: // ecx
+					case 0x0064666F: // ecx
+					case 0x006466A7: // ecx
+					case 0x006468A2: // ecx
+					case 0x006469A4: // ecx
+					case 0x006475C6: // ecx
+					case 0x006475F8: // ecx
+					case 0x00647B82: // ecx
+					case 0x00647DCF: // ecx
+					case 0x00647E03: // ecx
+					case 0x00647F4F: // ecx
+					case 0x00647F87: // ecx
+					case 0x006480EF: // ecx
+					case 0x00648127: // ecx
+					case 0x0064BAC1: // ecx
+					case 0x0064C1B6: // ecx
+					case 0x0064C275: // ecx
+					case 0x0064C578: // ecx
+					case 0x0064C617: // ecx
+					case 0x0064C65F: // ecx
+						pExceptionInfo->ContextRecord->Ecx = or_logfile;
+						return EXCEPTION_CONTINUE_EXECUTION;
+						break;
+
+					case 0x0061A225: // eax
+					case 0x00632868: // eax
+					case 0x00632B94: // eax
+					case 0x00632C0E: // eax
+					case 0x0063CF45: // eax
+					case 0x0063D667: // eax
+					case 0x0063D72E: // eax
+					case 0x00615466: // eax
+					case 0x0061A028: // eax
+					case 0x00647B5C: // eax
+					case 0x00648ED0: // eax
+					case 0x00649054: // eax
+					case 0x00649D06: // eax
+					case 0x0064C23D: // eax
+					case 0x0064BC2E: // eax
+					case 0x0064C17E: // eax
+						pExceptionInfo->ContextRecord->Eax = or_logfile;
+						return EXCEPTION_CONTINUE_EXECUTION;
+
+					case 0x0061A056: // edx
+					case 0x0061A1DB: // edx
+					case 0x0061A249: // edx
+					case 0x0063205E: // edx
+					case 0x00632890: // edx
+					case 0x00632D3E: // edx
+					case 0x0063CEE7: // edx
+					case 0x0063CF10: // edx
+					case 0x0063D1B9: // edx
+					case 0x0063D226: // edx
+					case 0x0063D302: // edx
+					case 0x006471D2: // edx
+					case 0x00647206: // edx
+					case 0x00649D25: // edx
+					case 0x0064C5CC: // edx
+						pExceptionInfo->ContextRecord->Edx = or_logfile;
+						return EXCEPTION_CONTINUE_EXECUTION;
+						

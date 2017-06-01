@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DHCoD4", "DHCoD4\DHCoD4.vcxproj", "{9B3C48BC-3979-45B0-9D1D-B2098014735B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Release-noopt|Win32 = Release-noopt|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B3C48BC-3979-45B0-9D1D-B2098014735B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9B3C48BC-3979-45B0-9D1D-B2098014735B}.Debug|Win32.Build.0 = Debug|Win32
+		{9B3C48BC-3979-45B0-9D1D-B2098014735B}.Release|Win32.ActiveCfg = Release|Win32
+		{9B3C48BC-3979-45B0-9D1D-B2098014735B}.Release|Win32.Build.0 = Release|Win32
+		{9B3C48BC-3979-45B0-9D1D-B2098014735B}.Release-noopt|Win32.ActiveCfg = Release-noopt|Win32
+		{9B3C48BC-3979-45B0-9D1D-B2098014735B}.Release-noopt|Win32.Build.0 = Release-noopt|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
